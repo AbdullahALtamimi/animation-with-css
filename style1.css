@@ -1,0 +1,85 @@
+body {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+div {
+    position: relative;
+    margin:auto;
+    top: 200px;
+    animation-name: content;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+a{
+    position: relative;
+    top:200px
+    
+}
+#head h1{
+    position: relative;
+    animation-name: head;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    font-weight: bold;
+}
+@keyframes head{
+    0%{top:0px}
+    100%{top:200px}
+}
+@keyframes content{
+    0%{left: -1000px;}
+    100%{left:0px}
+}
+.social {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    margin-top: 80px;
+    padding: 20px ;
+    border: 2px  white solid;
+    border-radius: 50% 50%;
+    transition: 0.4s;
+    opacity: 0;
+    animation-name:social;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    
+}
+.social:hover {
+    font-size: 30px;
+    color: teal;
+    
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding:5px 8px;
+    color:white;
+    margin: auto;
+    margin-top: 40px;
+    opacity: 0;
+    animation-name:btn;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    transition-property: transform;
+    animation-fill-mode: forwards;
+    transition-duration: 1s;
+    border: 2px rgb(255, 255, 255) solid;
+}
+.btn:hover{
+    transform: rotateY(180deg);
+}
+@keyframes btn{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes social{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
